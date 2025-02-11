@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
         <!--Etiqueta para Simbolos Especiales.-->
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <!--Titulo de la Pestaña de la Pagina.-->
         <title>Formulario Vehiculos Nurueña S.A.S</title>
-        <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: rgb(255, 255, 255);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-        <!--Introducción-->
+    <body>
         <header>
             <!--Imagen Logo Nurueña. Agregada de Forma Local. 
-                Ademas se Agrego un Atributo alt de Texto Alternativo en Caso de que no Aprarezca la Imagen-->
-            <img src="imagenes/logo_nuruena.png" alt="Logo Nurueña S.A.S" width="520px" title="Logo Nurueña S.A.S"/>
-            <!--Linea de Separación.-->
-            <hr/>
+            Ademas se Agrego un Atributo alt de Texto Alternativo en Caso de que no Aprarezca la Imagen-->
+            <img src="imagenes/logo_nuruena.png" alt="Logo Nurueña S.A.S" title="Logo Nurueña S.A.S"/>
             <!--Titulo Principal de la Pagina-->
             <h1>Formulario Diario de Inspección Preoperativa de Camiones.</h1>
             <!--Subtitulo-->
             <h3>Inspección y revisión preoperativa de los vehículos antes de iniciar la operación diaria segun las normativas legales vigentes.</h3>
-            <br/>
+
+        </header>        
+        <div class="indicaciones">
             <!--Subtitulo de Indicaciones-->
             <h3 style="color: rgb(255, 0, 0);">Indicaciones</h3>
             <!--Parrafo con las indicaciones-->
@@ -29,65 +28,71 @@
                 - El simbolo <span style="color: red;">*</span> indica que son campos que se deben llenar obligatoriamente.<br/><br/>
                 - Los campos que se encuentren con estado <span style="color:red;">inactivo</span> usted podra modificarlos para actualizarlos.
             </p>
-            <!--Salto de Lienea-->
-            <br/>
-            <!--Linea de Separación.-->
-            <hr/>
-        </header>
-        <main>
-            <!--Formulario.-->
-            <form>
-                <!--Subtitulo de Datos de la Persona que Realiza el Formulario-->
-                <h3>Conductor Responsable del Formulario:</h3>
-                <!--Texto de Campo de Entrada.-->
-                <label for="id_cond">Ingrese su Numero de Documento:</label>
-                <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
-                <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
-                <!--Asterisco de Obligatorio Color Rojo.-->
-                <span style="color:red;">*</span>
-                <!--Boton de prueba-->
-                <button type="submit"> Consultar</button>
-                <br/>
-                <br/>
-                <!--Texto de Campo de Entrada-->
-                <label for="estado_cond">Estado del Conductor:</label>
-                <!--Casilla de Estado.-->
-                <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
-                <!--Salto de Linea-->
-                <br/>
-                <br/>
-                <!--Texto de Campo de Entrada de Apellidos.-->
-                <label for="apell_cond">Apellidos:</label>
-                <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
-                <input id="apell_cond" name="apell_cond" type="text" readonly>
-                <!--Texto de Campo de Entrada de Nombres-->
-                <label for="nom_cond">Nombres:</label>
-                <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
-                <input id="nom_cond" name="nom_cond" type="text" readonly>
-                <!--Salto de Linea-->
-                <br/>
-                <!--Subtitulo-->
-                <h3>Licencia del Conductor:</h3>
-                <!--Texto de Campo de Entrada.-->
-                <label for="est_lic">Estado de la Licencia:</label>
-                <!--Casilla de Estado.-->
-                <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
-                <!--Salto de Linea-->
-                <br/>
-                <br/>
-                <!--Texto de Campo de Entrada.-->
-                <label for="cat_lic" >Categoria de la Licencia de Conduccion:</label>
-                <!--Casilla de Categoria de la Licencia.-->
-                <input id="cat_lic" name="cat_lic" type="text" readonly>
-                <br/>
-                <br/>
-                <!--Texto de Campo de Entrada.-->   
-                <label for="vig_lic">Vigencia de la Licencia de Conducción:</label>
-                <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
-                <input id="vig_lic" name="vig_lic" type="date" readonly>
-                <!--Salto de Linea-->
-                <br/>
-                <br/>
+        <hr>
+        </div>
+        <!--Formulario.-->
+            <form id="formulario">
+                <div class="contenedor">
+                <div class="form-row">
+                    <div class="form-column">    
+                        <!--Subtitulo de Datos de la Persona que Realiza el Formulario-->
+                        <h3>Conductor Responsable del Formulario:</h3>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="id_cond">Ingrese su Numero de Documento:</label>
+                        <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
+                        <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
+                        <!--Asterisco de Obligatorio Color Rojo.-->
+                        <span style="color:red;">*</span>
+                        <!--Boton de prueba-->
+                        <button type="submit"> Consultar</button>
+                        <br/>
+                        <br/>
+                        <!--Texto de Campo de Entrada-->
+                        <label for="estado_cond">Estado del Conductor:</label>
+                        <!--Casilla de Estado.-->
+                        <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
+                        <!--Salto de Linea-->
+                        <br/>
+                        <br/>
+                        <!--Texto de Campo de Entrada de Apellidos.-->
+                        <label for="apell_cond">Apellidos:</label>
+                        <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
+                        <input id="apell_cond" name="apell_cond" type="text" readonly>
+                        <!--Texto de Campo de Entrada de Nombres-->
+                        <label for="nom_cond">Nombres:</label>
+                        <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
+                        <input id="nom_cond" name="nom_cond" type="text" readonly>
+                        <!--Salto de Linea-->
+                        <br/>
+                    </div>
+                </div>    
+                <div class="form-row">
+                    <div class="form-column">    
+                        <!--Subtitulo-->
+                        <h3>Licencia del Conductor:</h3>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="est_lic">Estado de la Licencia:</label>
+                        <!--Casilla de Estado.-->
+                        <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
+                        <!--Salto de Linea-->
+                        <br/>
+                        <br/>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="cat_lic" >Categoria de la Licencia de Conduccion:</label>
+                        <!--Casilla de Categoria de la Licencia.-->
+                        <input id="cat_lic" name="cat_lic" type="text" readonly>
+                        <br/>
+                        <br/>
+                        <!--Texto de Campo de Entrada.-->   
+                        <label for="vig_lic">Vigencia de la Licencia de Conducción:</label>
+                        <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
+                        <input id="vig_lic" name="vig_lic" type="date" readonly>
+                        <!--Salto de Linea-->
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+                </div>
                 <!--Linea de Separacion.-->
                 <hr/>
                 <!--Subtitulo de Datos del Vehiculo.-->
