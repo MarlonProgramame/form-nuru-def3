@@ -1,5 +1,5 @@
-var estado_llanta_del_der_malo = document.getElementById('estado_llanta_del_der_malo').value;
+var estado_llanta_del_der_malo = document.getElementById('estado_llanta_del_der_malo');
 
-addEventListener('click', function(){
+estado_llanta_del_der_malo.addEventListener('click', function(){
     this.alert("Hola");
 });
