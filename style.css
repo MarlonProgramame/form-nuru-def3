@@ -1,6 +1,6 @@
 header{
     padding: 20px;
-    background-color: rgb(80, 68, 69);
+    background-color: rgb(90, 136, 150);
     text-align: center;
     color: white;
     margin-bottom: 5px;
@@ -19,6 +19,7 @@ form{
     padding: 20px;
     margin: auto;
     justify-content: space-between;
+    background-color: #efefef;
 }
 .contenedor{
     display: flex;
