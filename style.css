@@ -33,3 +33,6 @@ form{
 .form-column {
     width: 48%; /* Puedes ajustar este porcentaje según el espacio que necesites */
 }
+table{
+    border: 1;
+}
