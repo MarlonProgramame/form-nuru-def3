@@ -105,9 +105,9 @@
                     <div class="form-column">  
                 <label for="placa">Placa del Vehiculo:</label>
                 <!--Casilla Desplegable de Placa-->
-                <select id="placa" name="placa">
+                <select id="placa" name="placa" required>
                 <!--Opciones de la Casilla desplegable. (EJEMPLO PARA MOSTRAR.)-->
-                    <option value="seleccione_una_opcion">Seleccione una Opción</option>
+                    <option value="">Seleccione una Opción</option>
                     <option value="wlm461">WLM461</option>
                     <option value="sor737">SOR737</option>
                     <option value="eqq163">EQQ163</option>
@@ -135,9 +135,9 @@
                 <br/>
                 <!--Opciones Casillas Desplegables para Estado del Combustible.-->
                 <label for="est_combustible">Estado del Combustible</label>
-                <select id="est_combustible" name="est_combustible">
+                <select id="est_combustible" name="est_combustible" required>
                     <!--Opciones de la Casilla Desplegable.-->
-                    <option value="seleccione_una_opcion">Seleccione una Opción</option>
+                    <option value="">Seleccione una Opción</option>
                     <option value="mas_de_medio_tanq">Mas de Medio Tanque</option>
                     <option value="medio_tanq">Medio Tanque</option>
                     <option value="menos_de_medio_tanq">Menos de Medio Tanque</option>
@@ -195,65 +195,65 @@
                     <tr>
                         <!--Fila Llanta Delantera Derecha.-->
                         <td><label>Delantera Derecha</label></td>
-                        <td><input type="radio" id="estado_llanta_del_der_bueno" value="bueno" name="estado_llanta_del_der"></td>
-                        <td><input type="radio" id="estado_llanta_del_der_malo" value="malo" name="estado_llanta_del_der"></td>
-                        <td><input type="radio" id="estado_llanta_del_der_no_aplica" value="no_aplica" name="estado_llanta_del_der"></td>
+                        <td><input type="radio" id="estado_llanta_del_der_bueno" value="bueno" name="estado_llanta_del_der" required></td>
+                        <td><input type="radio" id="estado_llanta_del_der_malo" value="malo" name="estado_llanta_del_der" required></td>
+                        <td><input type="radio" id="estado_llanta_del_der_no_aplica" value="no_aplica" name="estado_llanta_del_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Llanta Delantera Izquierda.-->
                         <td><label>Delantera Izquierda</label></td>
-                        <td><input type="radio" id="estado_llanta_del_izq_bueno" value="bueno" name="estado_llanta_del_izq"></td>
-                        <td><input type="radio" id="estado_llanta_del_izq_malo" value="malo" name="estado_llanta_del_izq"></td>
-                        <td><input type="radio" id="estado_llanta_del_izq_no_aplica" value="no_aplica" name="estado_llanta_del_izq"></td>
+                        <td><input type="radio" id="estado_llanta_del_izq_bueno" value="bueno" name="estado_llanta_del_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_del_izq_malo" value="malo" name="estado_llanta_del_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_del_izq_no_aplica" value="no_aplica" name="estado_llanta_del_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila Llanta Trasera Derecha Interna.-->
                         <td><label>Trasera Derecha Interna</label></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_der_bueno" value="bueno" name="estado_llanta_tras_int_der"></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_der_malo" value="malo" name="estado_llanta_tras_int_der"></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_der_aplica" value="no_aplica" name="estado_llanta_tras_int_der"></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_der_bueno" value="bueno" name="estado_llanta_tras_int_der" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_der_malo" value="malo" name="estado_llanta_tras_int_der" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_der_aplica" value="no_aplica" name="estado_llanta_tras_int_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Llanta Trasera Derecha Externa.-->
                         <td><label>Trasera Derecha Externa</label></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_der_bueno" value="bueno" name="estado_llanta_tras_ext_der"></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_der_malo" value="malo" name="estado_llanta_tras_ext_der"></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_der_aplica" value="no_aplica" name="estado_llanta_tras_ext_der"></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_der_bueno" value="bueno" name="estado_llanta_tras_ext_der" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_der_malo" value="malo" name="estado_llanta_tras_ext_der" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_der_aplica" value="no_aplica" name="estado_llanta_tras_ext_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Llanta Trasera Derecha Interna.-->
                         <td><label>Trasera Izquierda Interna</label></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_izq_bueno" value="bueno" name="estado_llanta_tras_int_izq"></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_izq_malo" value="malo" name="estado_llanta_tras_int_izq"></td>
-                        <td><input type="radio" id="estado_llanta_tras_int_izq_aplica" value="no_aplica" name="estado_llanta_tras_int_izq"></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_izq_bueno" value="bueno" name="estado_llanta_tras_int_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_izq_malo" value="malo" name="estado_llanta_tras_int_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_int_izq_aplica" value="no_aplica" name="estado_llanta_tras_int_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila Llanta Trasera Izquierda Externa.-->
                         <td><label>Trasera Izquierda Externa</label></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_izq_bueno" value="bueno" name="estado_llanta_tras_ext_izq"></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_izq_malo" value="malo" name="estado_llanta_tras_ext_izq"></td>
-                        <td><input type="radio" id="estado_llanta_tras_ext_izq_aplica" value="no_aplica" name="estado_llanta_tras_ext_izq"></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_izq_bueno" value="bueno" name="estado_llanta_tras_ext_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_izq_malo" value="malo" name="estado_llanta_tras_ext_izq" required></td>
+                        <td><input type="radio" id="estado_llanta_tras_ext_izq_aplica" value="no_aplica" name="estado_llanta_tras_ext_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Repuesto.-->
                         <td><label>Repuesto</label></td>
-                        <td><input type="radio" id="estado_repesuto_bueno" value="bueno" name="estado_repuesto"></td>
-                        <td><input type="radio" id="estado_repesuto_malo" value="malo" name="estado_repuesto"></td>
-                        <td><input type="radio" id="estado_repesuto_no_aplica" value="no_aplica" name="estado_repuesto"></td>
+                        <td><input type="radio" id="estado_repesuto_bueno" value="bueno" name="estado_repuesto" required></td>
+                        <td><input type="radio" id="estado_repesuto_malo" value="malo" name="estado_repuesto" required></td>
+                        <td><input type="radio" id="estado_repesuto_no_aplica" value="no_aplica" name="estado_repuesto" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Presión de Aire.-->
                         <td><label>Presión de Aire</label></td>
-                        <td><input type="radio" id="estado_presion_aire_bueno" value="bueno" name="estado_presion_aire"></td>
-                        <td><input type="radio" id="estado_presion_aire_malo" value="malo" name="estado_presion_aire"></td>
-                        <td><input type="radio" id="estado_presion_aire_no_aplica" value="no_aplica" name="estado_presion_aire"></td>
+                        <td><input type="radio" id="estado_presion_aire_bueno" value="bueno" name="estado_presion_aire" required></td>
+                        <td><input type="radio" id="estado_presion_aire_malo" value="malo" name="estado_presion_aire" required></td>
+                        <td><input type="radio" id="estado_presion_aire_no_aplica" value="no_aplica" name="estado_presion_aire" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Rines.-->
                         <td><label>Rines</label></td>
-                        <td><input type="radio" id="estado_rines_bueno" value="bueno" name="estado_rines"></td>
-                        <td><input type="radio" id="estado_rines_malo" value="malo" name="estado_rines"></td>
-                        <td><input type="radio" id="estado_rines_no_aplica" value="no_aplica" name="estado_rines"></td>
+                        <td><input type="radio" id="estado_rines_bueno" value="bueno" name="estado_rines" required></td>
+                        <td><input type="radio" id="estado_rines_malo" value="malo" name="estado_rines" required></td>
+                        <td><input type="radio" id="estado_rines_no_aplica" value="no_aplica" name="estado_rines" required></td>
                     </tr>
                 </table>
                     </div>
@@ -278,44 +278,44 @@
                     <tr>
                         <!--Linea Freno de Ahogo.-->
                         <td><label>Freno de Ahogo</label></td>
-                        <td><input type="radio" id="estado_freno_ahogo_bueno" value="bueno" name="estado_freno_ahogo"></td>
-                        <td><input type="radio" id="estado_freno_ahogo_malo" value="malo" name="estado_freno_ahogo"></td>
-                        <td><input type="radio" id="estado_freno_ahogo_no_aplica" value="no_aplica" name="estado_freno_ahogo"></td>
+                        <td><input type="radio" id="estado_freno_ahogo_bueno" value="bueno" name="estado_freno_ahogo" required></td>
+                        <td><input type="radio" id="estado_freno_ahogo_malo" value="malo" name="estado_freno_ahogo" required></td>
+                        <td><input type="radio" id="estado_freno_ahogo_no_aplica" value="no_aplica" name="estado_freno_ahogo" required></td>
                     </tr>
                     <tr>
                         <!--Linea de Pastillas Delanteras.-->
                         <td><label>Pastillas Delanteras</label></td>
-                        <td><input type="radio" id="estado_pastillas_del_bueno" value="bueno" name="estado_pastillas_del"></td>
-                        <td><input type="radio" id="estado_pastillas_del_malo" value="malo" name="estado_pastillas_del"></td>
-                        <td><input type="radio" id="estado_pastillas_del_no_aplica" value="no_aplica" name="estado_pastillas_del"></td>
+                        <td><input type="radio" id="estado_pastillas_del_bueno" value="bueno" name="estado_pastillas_del" required></td>
+                        <td><input type="radio" id="estado_pastillas_del_malo" value="malo" name="estado_pastillas_del" required></td>
+                        <td><input type="radio" id="estado_pastillas_del_no_aplica" value="no_aplica" name="estado_pastillas_del" required></td>
                     </tr>
                     <tr>
                         <!--Linea de Bandas Delanteras.-->
                         <td><label>Bandas Delanteras</label></td>
-                        <td><input type="radio" id="estado_bandas_del_bueno" value="bueno" name="estado_bandas_del"></td>
-                        <td><input type="radio" id="estado_bandas_del_malo" value="malo" name="estado_bandas_del"></td>
-                        <td><input type="radio" id="estado_bandas_del_no_aplica" value="no_aplica" name="estado_bandas_del"></td>
+                        <td><input type="radio" id="estado_bandas_del_bueno" value="bueno" name="estado_bandas_del" required></td>
+                        <td><input type="radio" id="estado_bandas_del_malo" value="malo" name="estado_bandas_del" required></td>
+                        <td><input type="radio" id="estado_bandas_del_no_aplica" value="no_aplica" name="estado_bandas_del" required></td>
                     </tr>
                     <tr>
                         <!--Linea de Bandas Traseras.-->
                         <td><label>Bandas Traseras</label></td>
-                        <td><input type="radio" id="estado_bandas_tras_bueno" value="bueno" name="estado_bandas_tras"></td>
-                        <td><input type="radio" id="estado_bandas_tras_malo" value="malo" name="estado_bandas_tras"></td>
-                        <td><input type="radio" id="estado_bandas_tras_no_aplica" value="no_aplica" name="estado_bandas_tras"></td>
+                        <td><input type="radio" id="estado_bandas_tras_bueno" value="bueno" name="estado_bandas_tras" required></td>
+                        <td><input type="radio" id="estado_bandas_tras_malo" value="malo" name="estado_bandas_tras" required></td>
+                        <td><input type="radio" id="estado_bandas_tras_no_aplica" value="no_aplica" name="estado_bandas_tras" required></td>
                     </tr>
                     <tr>
                         <!--Linea Freno de Seguridad.-->
                         <td><label>Freno de Seguridad</label></td>
-                        <td><input type="radio" id="estado_frenoseg_bueno" value="bueno" name="estado_frenoseg"></td>
-                        <td><input type="radio" id="estado_frenoseg_malo" value="malo" name="estado_frenoseg"></td>
-                        <td><input type="radio" id="estado_frenoseg_no_aplica" value="no_aplica" name="estado_frenoseg"></td>
+                        <td><input type="radio" id="estado_frenoseg_bueno" value="bueno" name="estado_frenoseg" required></td>
+                        <td><input type="radio" id="estado_frenoseg_malo" value="malo" name="estado_frenoseg" required></td>
+                        <td><input type="radio" id="estado_frenoseg_no_aplica" value="no_aplica" name="estado_frenoseg" required></td>
                     </tr>
                     <tr>
                         <!--Linea Freno de Mano.-->
                         <td><label>Freno de Mano</label></td>
-                        <td><input type="radio" id="estado_freno_de_mano_bueno" value="bueno" name="estado_freno_de_mano"></td>
-                        <td><input type="radio" id="estado_freno_de_mano_malo" value="malo" name="estado_freno_de_mano"></td>
-                        <td><input type="radio" id="estado_freno_de_mano_no_aplica" value="no_aplica" name="estado_freno_de_mano"></td>
+                        <td><input type="radio" id="estado_freno_de_mano_bueno" value="bueno" name="estado_freno_de_mano" required></td>
+                        <td><input type="radio" id="estado_freno_de_mano_malo" value="malo" name="estado_freno_de_mano" required></td>
+                        <td><input type="radio" id="estado_freno_de_mano_no_aplica" value="no_aplica" name="estado_freno_de_mano" required></td>
                     </tr>
                 </table>
                 <br>
@@ -333,29 +333,29 @@
                     <tr>
                         <!--Fila de Aseo Interno.-->
                         <td><label>Aseo Interno</label></td>
-                        <td><input type="radio" id="aseo_interno_bueno" value="bueno" name="aseo_interno"></td>
-                        <td><input type="radio" id="aseo_interno_malo" value="malo" name="aseo_interno"></td>
-                        <td><input type="radio" id="aseo_interno_no_aplica" value="no_aplica" name="aseo_interno"></td>
+                        <td><input type="radio" id="aseo_interno_bueno" value="bueno" name="aseo_interno" required></td>
+                        <td><input type="radio" id="aseo_interno_malo" value="malo" name="aseo_interno" required></td>
+                        <td><input type="radio" id="aseo_interno_no_aplica" value="no_aplica" name="aseo_interno" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Aseo Externo.-->
                         <td><label>Aseo Externo</label></td>
-                        <td><input type="radio" id="aseo_externo_bueno" value="bueno" name="aseo_externo"></td>
-                        <td><input type="radio" id="aseo_externo_malo" value="malo" name="aseo_externo"></td>
-                        <td><input type="radio" id="aseo_externo_no_aplica" value="no_aplica" name="aseo_externo" ></td>
+                        <td><input type="radio" id="aseo_externo_bueno" value="bueno" name="aseo_externo" required></td>
+                        <td><input type="radio" id="aseo_externo_malo" value="malo" name="aseo_externo" required></td>
+                        <td><input type="radio" id="aseo_externo_no_aplica" value="no_aplica" name="aseo_externo" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Latas.-->
                         <td><label>Latas</label></td>
-                        <td><input type="radio" id="aseo_latas_bueno" value="bueno" name="aseo_latas"></td>
-                        <td><input type="radio" id="aseo_latas_malo" value="malo" name="aseo_latas"></td>
-                        <td><input type="radio" id="aseo_latas_no_aplica" value="no_aplica" name="aseo_latas"  ></td>
+                        <td><input type="radio" id="aseo_latas_bueno" value="bueno" name="aseo_latas" required></td>
+                        <td><input type="radio" id="aseo_latas_malo" value="malo" name="aseo_latas" required></td>
+                        <td><input type="radio" id="aseo_latas_no_aplica" value="no_aplica" name="aseo_latas" required></td>
                     </tr>
                         <!--Fila de Pintura.-->
                         <td><label>Pintura</label></td>
-                        <td><input type="radio" id="aseo_pintura_bueno" value="bueno" name="aseo_pintura"></td>
-                        <td><input type="radio" id="aseo_pintura_malo" value="malo" name="aseo_pintura"></td>
-                        <td><input type="radio" id="aseo_pintura_no_aplica" value="no_aplica" name="aseo_pintura"></td>
+                        <td><input type="radio" id="aseo_pintura_bueno" value="bueno" name="aseo_pintura" required></td>
+                        <td><input type="radio" id="aseo_pintura_malo" value="malo" name="aseo_pintura" required></td>
+                        <td><input type="radio" id="aseo_pintura_no_aplica" value="no_aplica" name="aseo_pintura" required></td>
                 </table>
                 <br>
                 <!--Titulo Estado de Comodidad del Vehiculo.-->
@@ -372,30 +372,30 @@
                     <tr>
                         <!--Fila de Aire Acondicionado.-->
                         <td><label>Aire Acondicionado</label></td>
-                        <td><input type="radio" id="estado_aire_bueno" value="bueno" name="estado_aire_acondicionado" ></td>
-                        <td><input type="radio" id="estado_aire_malo" value="malo" name="estado_aire_acondicionado" ></td>
-                        <td><input type="radio" id="estado_aire_no_aplica" value="no_aplica" name="estado_aire_acondicionado"></td>
+                        <td><input type="radio" id="estado_aire_bueno" value="bueno" name="estado_aire_acondicionado" required></td>
+                        <td><input type="radio" id="estado_aire_malo" value="malo" name="estado_aire_acondicionado" required></td>
+                        <td><input type="radio" id="estado_aire_no_aplica" value="no_aplica" name="estado_aire_acondicionado" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Sillas y Espaldares.-->
                         <td><label>Sillas y Espaldares</label></td>
-                        <td><input type="radio" id="estado_silla_bueno" value="bueno" name="estado_silla"></td>
-                        <td><input type="radio" id="estado_silla_malo" value="malo" name="estado_silla"></td>
-                        <td><input type="radio" id="estado_silla_no_aplica" value="no_aplica" name="estado_silla" ></td>
+                        <td><input type="radio" id="estado_silla_bueno" value="bueno" name="estado_silla" required></td>
+                        <td><input type="radio" id="estado_silla_malo" value="malo" name="estado_silla" required></td>
+                        <td><input type="radio" id="estado_silla_no_aplica" value="no_aplica" name="estado_silla" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Encendedor.-->
                         <td><label>Encendedor</label></td>
-                        <td><input type="radio" id="estado_encendedor_bueno" value="bueno" name="estado_encendedor"></td>
-                        <td><input type="radio" id="estado_encendedor_malo" value="malo" name="estado_encendedor"></td>
-                        <td><input type="radio" id="estado_encendedor_no_aplica" value="no_aplica" name="estado_encendedor"></td>
+                        <td><input type="radio" id="estado_encendedor_bueno" value="bueno" name="estado_encendedor" required></td>
+                        <td><input type="radio" id="estado_encendedor_malo" value="malo" name="estado_encendedor" required></td>
+                        <td><input type="radio" id="estado_encendedor_no_aplica" value="no_aplica" name="estado_encendedor" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Luz Interior o de Techo-->
                         <td><label>Luz Interior o de Techo</label></td>
-                        <td><input type="radio" id="estado_luz_interior_bueno" value="bueno" name="estado_luz_interior"></td>
-                        <td><input type="radio" id="estado_luz_interior_malo" value="malo" name="estado_luz_interior"></td>
-                        <td><input type="radio" id="estado_luz_interior_no_aplica" value="no_aplica" name="estado_luz_interior"></td>
+                        <td><input type="radio" id="estado_luz_interior_bueno" value="bueno" name="estado_luz_interior" required></td>
+                        <td><input type="radio" id="estado_luz_interior_malo" value="malo" name="estado_luz_interior" required></td>
+                        <td><input type="radio" id="estado_luz_interior_no_aplica" value="no_aplica" name="estado_luz_interior" required></td>
                     </tr>
                 </table>
                 <!--Salto de Linea.-->
@@ -414,100 +414,100 @@
                     <tr>
                         <!--Fila Estado Aceite de Motor.-->
                         <td><label>Aceite de Motor</label></td>
-                        <td><input type="radio" id="estado_aceite_bueno" value="bueno" name="estado_aceite"></td>
-                        <td><input type="radio" id="estado_aceite_malo" value="malo" name="estado_aceite"></td>
-                        <td><input type="radio" id="estado_aceite_no_aplica" value="no_aplica" name="estado_aceite"></td>
+                        <td><input type="radio" id="estado_aceite_bueno" value="bueno" name="estado_aceite" required></td>
+                        <td><input type="radio" id="estado_aceite_malo" value="malo" name="estado_aceite" required></td>
+                        <td><input type="radio" id="estado_aceite_no_aplica" value="no_aplica" name="estado_aceite" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Refrigerante.-->
                         <td><label>Refrigerante</label></td>
-                        <td><input type="radio" id="estado_refrigerante_bueno" value="bueno" name="estado_refrigerante"></td>
-                        <td><input type="radio" id="estado_refrigerante_malo" value="malo" name="estado_refrigerante"></td>
-                        <td><input type="radio" id="estado_refrigerante_no_aplica" value="no_aplica" name="estado_refrigerante"></td>
+                        <td><input type="radio" id="estado_refrigerante_bueno" value="bueno" name="estado_refrigerante" required></td>
+                        <td><input type="radio" id="estado_refrigerante_malo" value="malo" name="estado_refrigerante" required></td>
+                        <td><input type="radio" id="estado_refrigerante_no_aplica" value="no_aplica" name="estado_refrigerante" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Refrigerante Tanque de Expansión.-->
                         <td><label>Refrigerante Tanque de Expansión</label></td>
-                        <td><input type="radio" id="estado_tanq_refrig_bueno" value="bueno" name="estado_tanq_refrig"></td>
-                        <td><input type="radio" id="estado_tanq_refrig_malo" value="malo" name="estado_tanq_refrig"></td>
-                        <td><input type="radio" id="estado_tanq_refrig_no_aplica" value="no_aplica" name="estado_tanq_refrig"></td>
+                        <td><input type="radio" id="estado_tanq_refrig_bueno" value="bueno" name="estado_tanq_refrig" required></td>
+                        <td><input type="radio" id="estado_tanq_refrig_malo" value="malo" name="estado_tanq_refrig" required></td>
+                        <td><input type="radio" id="estado_tanq_refrig_no_aplica" value="no_aplica" name="estado_tanq_refrig" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Agua Limpiabrisas.-->
                         <td><label>Agua Limpiabrisas</label></td>
-                        <td><input type="radio" id="estado_agua_limpiabri_bueno" value="bueno" name="estado_agua_limpiabri"></td>
-                        <td><input type="radio" id="estado_agua_limpiabri_malo" value="malo" name="estado_agua_limpiabri"></td>
-                        <td><input type="radio" id="estado_agua_limpiabri_no_aplica" value="no_aplica" name="estado_agua_limpiabri"></td>
+                        <td><input type="radio" id="estado_agua_limpiabri_bueno" value="bueno" name="estado_agua_limpiabri" required></td>
+                        <td><input type="radio" id="estado_agua_limpiabri_malo" value="malo" name="estado_agua_limpiabri" required></td>
+                        <td><input type="radio" id="estado_agua_limpiabri_no_aplica" value="no_aplica" name="estado_agua_limpiabri" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Liquido de Frenos.-->
                         <td><label>Liquido de Frenos</label></td>
-                        <td><input type="radio" id="estado_liq_frenos_bueno" value="bueno" name="estado_liq_frenos"></td>
-                        <td><input type="radio" id="estado_liq_frenos_malo" value="malo" name="estado_liq_frenos"></td>
-                        <td><input type="radio" id="estado_liq_frenos_no_aplica" value="no_aplica" name="estado_liq_frenos"></td>
+                        <td><input type="radio" id="estado_liq_frenos_bueno" value="bueno" name="estado_liq_frenos" required></td>
+                        <td><input type="radio" id="estado_liq_frenos_malo" value="malo" name="estado_liq_frenos" required></td>
+                        <td><input type="radio" id="estado_liq_frenos_no_aplica" value="no_aplica" name="estado_liq_frenos" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Agua de Baterias.-->
                         <td><label>Agua Baterias</label></td>
-                        <td><input type="radio" id="estado_agua_baterias_bueno" value="bueno" name="estado_agua_baterias"></td>
-                        <td><input type="radio" id="estado_agua_baterias_malo" value="malo" name="estado_agua_baterias"></td>
-                        <td><input type="radio" id="estado_agua_baterias_no_aplica" value="no_aplica" name="estado_agua_baterias"></td>
+                        <td><input type="radio" id="estado_agua_baterias_bueno" value="bueno" name="estado_agua_baterias" required></td>
+                        <td><input type="radio" id="estado_agua_baterias_malo" value="malo" name="estado_agua_baterias" required></td>
+                        <td><input type="radio" id="estado_agua_baterias_no_aplica" value="no_aplica" name="estado_agua_baterias" required></td>
                     </tr>
                     <tr>
                         <!--Fila Estado Aceite Hidraulico de la Dirección.-->
                         <td><label>Aceite Hidraulico de la Dirección</label></td>
-                        <td><input type="radio" id="estado_hidraulico_dir_bueno" value="bueno" name="estado_hidraulico_dir"></td>
-                        <td><input type="radio" id="estado_hidraulico_dir_malo" value="malo" name="estado_hidraulico_dir"></td>
-                        <td><input type="radio" id="estado_hidraulico_dir_no_aplica" value="no_aplica" name="estado_hidraulico_dir"></td>
+                        <td><input type="radio" id="estado_hidraulico_dir_bueno" value="bueno" name="estado_hidraulico_dir" required></td>
+                        <td><input type="radio" id="estado_hidraulico_dir_malo" value="malo" name="estado_hidraulico_dir" required></td>
+                        <td><input type="radio" id="estado_hidraulico_dir_no_aplica" value="no_aplica" name="estado_hidraulico_dir" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Fuga de ACPM.-->
                         <td><label>Fuga de ACPM</label></td>
-                        <td><input type="radio" id="estado_fuga_acpm_bueno" value="bueno" name="estado_fuga_acpm"></td>
-                        <td><input type="radio" id="estado_fuga_acpm_malo" value="malo" name="estado_fuga_acpm"></td>
-                        <td><input type="radio" id="estado_fuga_acpm_no_aplica" value="no_aplica" name="estado_fuga_acpm"></td>
+                        <td><input type="radio" id="estado_fuga_acpm_bueno" value="bueno" name="estado_fuga_acpm" required></td>
+                        <td><input type="radio" id="estado_fuga_acpm_malo" value="malo" name="estado_fuga_acpm" required></td>
+                        <td><input type="radio" id="estado_fuga_acpm_no_aplica" value="no_aplica" name="estado_fuga_acpm" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga de Refrigerante.-->
                         <td><label>Fuga de Refrigerante</label></td>
-                        <td><input type="radio" id="estado_fuga_refrig_bueno" value="bueno" name="estado_fuga_refrig"></td>
-                        <td><input type="radio" id="estado_fuga_refrig_malo" value="malo" name="estado_fuga_refrig"></td>
-                        <td><input type="radio" id="estado_fuga_refrig_no_aplica" value="no_aplica" name="estado_fuga_refrig"></td>
+                        <td><input type="radio" id="estado_fuga_refrig_bueno" value="bueno" name="estado_fuga_refrig" required></td>
+                        <td><input type="radio" id="estado_fuga_refrig_malo" value="malo" name="estado_fuga_refrig" required></td>
+                        <td><input type="radio" id="estado_fuga_refrig_no_aplica" value="no_aplica" name="estado_fuga_refrig" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga de Aceite de la Transmisión.-->
                         <td><label>Fuga Aceite de la Transmisión</label></td>
-                        <td><input type="radio" id="estado_fuga_aceite_transm_bueno" value="bueno" name="estado_fuga_aceite_transm"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_transm_malo" value="malo" name="estado_fuga_aceite_transm"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_transm_no_aplica" value="no_aplica" name="estado_fuga_aceite_transm"></td>
+                        <td><input type="radio" id="estado_fuga_aceite_transm_bueno" value="bueno" name="estado_fuga_aceite_transm" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_transm_malo" value="malo" name="estado_fuga_aceite_transm" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_transm_no_aplica" value="no_aplica" name="estado_fuga_aceite_transm" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga de Aceite del Diferencial.-->
                         <td><label>Fuga Aceite del Diferencial</label></td>
-                        <td><input type="radio" id="estado_fuga_aceite_dif_bueno" value="bueno" name="estado_fuga_aceite_dif"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_dif_malo" value="malo" name="estado_fuga_aceite_dif"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_dif_no_aplica" value="no_aplica" name="estado_fuga_aceite_dif"></td>
+                        <td><input type="radio" id="estado_fuga_aceite_dif_bueno" value="bueno" name="estado_fuga_aceite_dif" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_dif_malo" value="malo" name="estado_fuga_aceite_dif" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_dif_no_aplica" value="no_aplica" name="estado_fuga_aceite_dif" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga Liquido de Frenos.-->
                         <td><label>Fuga Liquido de Frenos</label></td>
-                        <td><input type="radio" id="estado_fuga_liq_frenos_bueno" value="bueno" name="estado_fuga_liq_frenos"></td>
-                        <td><input type="radio" id="estado_fuga_liq_frenos_malo" value="malo" name="estado_fuga_liq_frenos"></td>
-                        <td><input type="radio" id="estado_fuga_liq_frenos_no_aplica" value="no_aplica" name="estado_fuga_liq_frenos"></td>
+                        <td><input type="radio" id="estado_fuga_liq_frenos_bueno" value="bueno" name="estado_fuga_liq_frenos" required></td>
+                        <td><input type="radio" id="estado_fuga_liq_frenos_malo" value="malo" name="estado_fuga_liq_frenos" required></td>
+                        <td><input type="radio" id="estado_fuga_liq_frenos_no_aplica" value="no_aplica" name="estado_fuga_liq_frenos" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga de Aire.-->
                         <td><label>Fuga de Aire</label></td>
-                        <td><input type="radio" id="estado_fuga_aire_bueno" value="bueno" name="estado_fuga_aire"></td>
-                        <td><input type="radio" id="estado_fuga_aire_malo" value="malo" name="estado_fuga_aire"></td>
-                        <td><input type="radio" id="estado_fuga_aire_no_aplica" value="no_aplica" name="estado_fuga_aire"></td>
+                        <td><input type="radio" id="estado_fuga_aire_bueno" value="bueno" name="estado_fuga_aire" required></td>
+                        <td><input type="radio" id="estado_fuga_aire_malo" value="malo" name="estado_fuga_aire" required></td>
+                        <td><input type="radio" id="estado_fuga_aire_no_aplica" value="no_aplica" name="estado_fuga_aire" required></td>
                     </tr>
                     <tr>
                         <!--Fila Fuga de Aceite de Motor.-->
                         <td><label>Fuga Aceite de Motor</label></td>
-                        <td><input type="radio" id="estado_fuga_aceite_motor_bueno" value="bueno" name="estado_fuga_aceite_motor"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_motor_malo" value="malo" name="estado_fuga_aceite_motor"></td>
-                        <td><input type="radio" id="estado_fuga_aceite_motor_no_aplica" value="no_aplica" name="estado_fuga_aceite_motor"></td>
+                        <td><input type="radio" id="estado_fuga_aceite_motor_bueno" value="bueno" name="estado_fuga_aceite_motor" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_motor_malo" value="malo" name="estado_fuga_aceite_motor" required></td>
+                        <td><input type="radio" id="estado_fuga_aceite_motor_no_aplica" value="no_aplica" name="estado_fuga_aceite_motor" required></td>
                     </tr>
                 </table>
                 <!--Salto de Linea.-->
@@ -525,16 +525,16 @@
                     <tr>
                         <!--Fila Filtro del Combustible.-->
                         <td><label>Filtro del Combustible</label></td>
-                        <td><input type="radio" id="estado_filtro_combustible_bueno" value="bueno" name="estado_filtro_combustible"></td>
-                        <td><input type="radio" id="estado_filtro_combustible_malo" value="malo" name="estado_filtro_combustible"></td>
-                        <td><input type="radio" id="estado_filtro_combustible_no_aplica" value="no_aplica" name="estado_filtro_combustible"></td>
+                        <td><input type="radio" id="estado_filtro_combustible_bueno" value="bueno" name="estado_filtro_combustible" required></td>
+                        <td><input type="radio" id="estado_filtro_combustible_malo" value="malo" name="estado_filtro_combustible" required></td>
+                        <td><input type="radio" id="estado_filtro_combustible_no_aplica" value="no_aplica" name="estado_filtro_combustible" required></td>
                     </tr>
                     <tr>
                         <!--Fila Filtro del Aire.--->
                         <td><label>Filtro del Aire</label></td>
-                        <td><input type="radio" id="estado_filtro_aire_bueno" value="bueno" name="estado_filtro_aire"></td>
-                        <td><input type="radio" id="estado_filtro_aire_malo" value="malo" name="estado_filtro_aire"></td>
-                        <td><input type="radio" id="estado_filtro_aire_bueno" value="no_aplica" name="estado_filtro_aire"></td>
+                        <td><input type="radio" id="estado_filtro_aire_bueno" value="bueno" name="estado_filtro_aire" required></td>
+                        <td><input type="radio" id="estado_filtro_aire_malo" value="malo" name="estado_filtro_aire" required></td>
+                        <td><input type="radio" id="estado_filtro_aire_bueno" value="no_aplica" name="estado_filtro_aire" required></td>
                     </tr>
                 </table>
                 <!--Salto de Linea.-->
@@ -552,51 +552,51 @@
                     <tr>
                         <!--Fila Testigos en General.-->
                         <td><label>Luces de Tablero o Testigos</label></td>
-                        <td><input type="radio" id="estado_indicador_tablero_bueno" value="bueno" name="estado_indicador_tablero"></td>
-                        <td><input type="radio" id="estado_indicador_tablero_malo" value="malo" name="estado_indicador_tablero"></td>
-                        <td><input type="radio" id="estado_indicador_tablero_no_aplica" value="no_aplica" name="estado_indicador_tablero"></td>
+                        <td><input type="radio" id="estado_indicador_tablero_bueno" value="bueno" name="estado_indicador_tablero" required></td>
+                        <td><input type="radio" id="estado_indicador_tablero_malo" value="malo" name="estado_indicador_tablero" required></td>
+                        <td><input type="radio" id="estado_indicador_tablero_no_aplica" value="no_aplica" name="estado_indicador_tablero" required></td>
                     </tr>
                     <tr>
                         <!--Fila Testigo de Combustible-->
                         <td><label>Indicador de Combustible</label></td>
-                        <td><input type="radio" id="estado_indicador_combustible_bueno" value="bueno" name="estado_indicador_combustible"></td>
-                        <td><input type="radio" id="estado_indicador_combustible_malo" value="malo" name="estado_indicador_combustible"></td>
-                        <td><input type="radio" id="estado_indicador_combustible_no_aplica" value="no_aplica" name="estado_indicador_combustible"></td>
+                        <td><input type="radio" id="estado_indicador_combustible_bueno" value="bueno" name="estado_indicador_combustible" required></td>
+                        <td><input type="radio" id="estado_indicador_combustible_malo" value="malo" name="estado_indicador_combustible" required></td>
+                        <td><input type="radio" id="estado_indicador_combustible_no_aplica" value="no_aplica" name="estado_indicador_combustible" required></td>
                     </tr>
                     <tr>
                         <!--Fila Testigo de Kilometraje.-->
                         <td><label>Indicador de Kilometraje o Odometro</label></td>
-                        <td><input type="radio" id="estado_indicador_kilometraje_bueno" value="bueno" name="estado_indicador_kilometraje"></td>
-                        <td><input type="radio" id="estado_indicador_kilometraje_malo" value="malo" name="estado_indicador_kilometraje"></td>
-                        <td><input type="radio" id="estado_indicador_kilometraje_no_aplica" value="no_aplica" name="estado_indicador_kilometraje"></td>
+                        <td><input type="radio" id="estado_indicador_kilometraje_bueno" value="bueno" name="estado_indicador_kilometraje" required></td>
+                        <td><input type="radio" id="estado_indicador_kilometraje_malo" value="malo" name="estado_indicador_kilometraje" required></td>
+                        <td><input type="radio" id="estado_indicador_kilometraje_no_aplica" value="no_aplica" name="estado_indicador_kilometraje" required></td>
                     </tr>
                     <tr>
                         <!--Fila Tacometro.-->
                         <td><label>Tacometro</label></td>
-                        <td><input type="radio" id="estado_tacometro_bueno" value="bueno" name="estado_tacometro"></td>
-                        <td><input type="radio" id="estado_tacometro_malo" value="malo" name="estado_tacometro"></td>
-                        <td><input type="radio" id="estado_tacometro_no_aplica" value="no_aplica" name="estado_tacometro"></td>
+                        <td><input type="radio" id="estado_tacometro_bueno" value="bueno" name="estado_tacometro" required></td>
+                        <td><input type="radio" id="estado_tacometro_malo" value="malo" name="estado_tacometro" required></td>
+                        <td><input type="radio" id="estado_tacometro_no_aplica" value="no_aplica" name="estado_tacometro" required></td>
                     </tr>
                     <tr>
                         <!--Fila Indicador de Presion del Aceite.-->
                         <td><label>Indicador de Presión del Aceite</label></td>
-                        <td><input type="radio" id="estado_indicador_presion_aceite_bueno" value="bueno" name="estado_indicador_presion_aceite"></td>
-                        <td><input type="radio" id="estado_indicador_presion_aceite_malo" value="malo" name="estado_indicador_presion_aceite"></td>
-                        <td><input type="radio" id="estado_indicador_presion_aceite_no_aplica" value="no_aplica" name="estado_indicador_presion_aceite"></td>
+                        <td><input type="radio" id="estado_indicador_presion_aceite_bueno" value="bueno" name="estado_indicador_presion_aceite" required></td>
+                        <td><input type="radio" id="estado_indicador_presion_aceite_malo" value="malo" name="estado_indicador_presion_aceite" required></td>
+                        <td><input type="radio" id="estado_indicador_presion_aceite_no_aplica" value="no_aplica" name="estado_indicador_presion_aceite" required></td>
                     </tr>
                     <tr>
                         <!--Fila Indicador de Sensor de Temperatura.-->
                         <td><label>Indicador Sensor de Temperatura</label></td>
-                        <td><input type="radio" id="estado_indicador_temperatura_bueno" value="bueno" name="estado_indicador_temperatura"></td>
-                        <td><input type="radio" id="estado_indicador_temperatura_malo" value="malo" name="estado_indicador_temperatura"></td>
-                        <td><input type="radio" id="estado_indicador_temperatura_no_aplica" value="no_aplica" name="estado_indicador_temperatura"></td>
+                        <td><input type="radio" id="estado_indicador_temperatura_bueno" value="bueno" name="estado_indicador_temperatura" required></td>
+                        <td><input type="radio" id="estado_indicador_temperatura_malo" value="malo" name="estado_indicador_temperatura" required></td>
+                        <td><input type="radio" id="estado_indicador_temperatura_no_aplica" value="no_aplica" name="estado_indicador_temperatura" required></td>
                     </tr>
                     <tr>
                         <!--Fila Bocina.-->
                         <td><label>Bocina</label></td>
-                        <td><input type="radio" id="estado_bocina_bueno" value="bueno" name="estado_bocina"></td>
-                        <td><input type="radio" id="estado_bocina_malo" value="malo" name="estado_bocina"></td>
-                        <td><input type="radio" id="estado_bocina_no_aplica" value="no_aplica" name="estado_bocina"></td>
+                        <td><input type="radio" id="estado_bocina_bueno" value="bueno" name="estado_bocina" required></td>
+                        <td><input type="radio" id="estado_bocina_malo" value="malo" name="estado_bocina" required></td>
+                        <td><input type="radio" id="estado_bocina_no_aplica" value="no_aplica" name="estado_bocina" required></td>
                     </tr>
                 </table>
                 <!--Salto de Linea.-->
@@ -614,51 +614,51 @@
                     <tr>
                         <!--Fila Cinturon de Seguridad.-->
                         <td><label>Cinturones de Seguridad</label></td>
-                        <td><input type="radio" id="estado_cinturon_seguridad_bueno" value="bueno" name="estado_cinturon_seguridad"></td>
-                        <td><input type="radio" id="estado_cinturon_seguridad_malo" value="malo" name="estado_cinturon_seguridad"></td>
-                        <td><input type="radio" id="estado_cinturon_seguridad_no_aplica" value="no_aplica" name="estado_cinturon_seguridad"></td>
+                        <td><input type="radio" id="estado_cinturon_seguridad_bueno" value="bueno" name="estado_cinturon_seguridad" required></td>
+                        <td><input type="radio" id="estado_cinturon_seguridad_malo" value="malo" name="estado_cinturon_seguridad" required></td>
+                        <td><input type="radio" id="estado_cinturon_seguridad_no_aplica" value="no_aplica" name="estado_cinturon_seguridad" required></td>
                     </tr>
                     <tr>
                         <!--Fila Airbags.-->
                         <td><label>Airbags</label></td>
-                        <td><input type="radio" id="estado_airbags_bueno" value="bueno" name="estado_airbags"></td>
-                        <td><input type="radio" id="estado_airbags_malo" value="malo" name="estado_airbags"></td>
-                        <td><input type="radio" id="estado_airbags_no_aplica" value="no_aplica" name="estado_airbags"></td>
+                        <td><input type="radio" id="estado_airbags_bueno" value="bueno" name="estado_airbags" required></td>
+                        <td><input type="radio" id="estado_airbags_malo" value="malo" name="estado_airbags" required></td>
+                        <td><input type="radio" id="estado_airbags_no_aplica" value="no_aplica" name="estado_airbags" required></td>
                     </tr>
                     <tr>
                         <!--Fila Pasnoramico y Vidrio de las Puertas.-->
                         <td><label>Panoramico y Vidrio de las Puertas</label></td>
-                        <td><input type="radio" id="estado_panoramico_vidrios_bueno" value="bueno" name="estado_panoramico_vidrios"></td>
-                        <td><input type="radio" id="estado_panoramico_vidrios_malo" value="malo" name="estado_panoramico_vidrios"></td>
-                        <td><input type="radio" id="estado_panoramico_vidrios_no_aplica" value="no_aplica" name="estado_panoramico_vidrios"></td>
+                        <td><input type="radio" id="estado_panoramico_vidrios_bueno" value="bueno" name="estado_panoramico_vidrios" required></td>
+                        <td><input type="radio" id="estado_panoramico_vidrios_malo" value="malo" name="estado_panoramico_vidrios" required></td>
+                        <td><input type="radio" id="estado_panoramico_vidrios_no_aplica" value="no_aplica" name="estado_panoramico_vidrios" required></td>
                     </tr>
                     <tr>
                         <!--Fila poyacabezas.-->
                         <td><label>Apoyacabezas</label></td>
-                        <td><input type="radio" id="estado_apoyacabezas_bueno" value="bueno" name="estado_apoyacabezas"></td>
-                        <td><input type="radio" id="estado_apoyacabezas_malo" value="malo" name="estado_apoyacabezas"></td>
-                        <td><input type="radio" id="estado_apoyacabezas_no_aplica" value="no_aplica" name="estado_apoyacabezas"></td>
+                        <td><input type="radio" id="estado_apoyacabezas_bueno" value="bueno" name="estado_apoyacabezas" required></td>
+                        <td><input type="radio" id="estado_apoyacabezas_malo" value="malo" name="estado_apoyacabezas" required></td>
+                        <td><input type="radio" id="estado_apoyacabezas_no_aplica" value="no_aplica" name="estado_apoyacabezas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Espejo Lateral Derecho.-->
                         <td><label>Espejo Lateral Derecho</label></td>
-                        <td><input type="radio" id="estado_esp_lat_der_bueno" value="bueno" name="estado_esp_lat_der" ></td>
-                        <td><input type="radio" id="estado_esp_lat_der_malo" value="malo" name="estado_esp_lat_der" ></td>
-                        <td><input type="radio" id="estado_esp_lat_der_no_aplica" value="no_aplica" name="estado_esp_lat_der" ></td>
+                        <td><input type="radio" id="estado_esp_lat_der_bueno" value="bueno" name="estado_esp_lat_der" required></td>
+                        <td><input type="radio" id="estado_esp_lat_der_malo" value="malo" name="estado_esp_lat_der" required></td>
+                        <td><input type="radio" id="estado_esp_lat_der_no_aplica" value="no_aplica" name="estado_esp_lat_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Espejo Lateral Izquierdo.-->
                         <td><label>Espejo Lateral Izquierdo</label></td>
-                        <td><input type="radio" id="estado_esp_lat_izq_bueno" value="bueno" name="estado_esp_lat_izq" ></td>
-                        <td><input type="radio" id="estado_esp_lat_izq_malo" value="malo" name="estado_esp_lat_izq" ></td>
-                        <td><input type="radio" id="estado_esp_lat_izq_no_aplica" value="no_aplica" name="estado_esp_lat_izq" ></td>
+                        <td><input type="radio" id="estado_esp_lat_izq_bueno" value="bueno" name="estado_esp_lat_izq" required></td>
+                        <td><input type="radio" id="estado_esp_lat_izq_malo" value="malo" name="estado_esp_lat_izq" required></td>
+                        <td><input type="radio" id="estado_esp_lat_izq_no_aplica" value="no_aplica" name="estado_esp_lat_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila Espejo Retrovisor.-->
                         <td><label>Espejo Retrovisor</label></td>
-                        <td><input type="radio" id="estado_esp_retrov_bueno" value="bueno" name="estado_esp_retrovisor"></td>
-                        <td><input type="radio" id="estado_esp_retrov_malo" value="malo" name="estado_esp_retrovisor"></td>
-                        <td><input type="radio" id="estado_esp_retrov_no_aplica" value="no_aplica" name="estado_esp_retrovisor"></td>
+                        <td><input type="radio" id="estado_esp_retrov_bueno" value="bueno" name="estado_esp_retrovisor" required></td>
+                        <td><input type="radio" id="estado_esp_retrov_malo" value="malo" name="estado_esp_retrovisor" required></td>
+                        <td><input type="radio" id="estado_esp_retrov_no_aplica" value="no_aplica" name="estado_esp_retrovisor" required></td>
                     </tr>
                 </table>
                 <br>
@@ -674,37 +674,37 @@
                     <tr>
                         <!--Fila de Dirección.-->
                         <td><label>Dirección</input></td>
-                        <td><input type="radio" id="estado_direccion_bueno" value="bueno" name="estado_direccion"></td>
-                        <td><input type="radio" id="estado_direccion_malo" value="malo" name="estado_direccion"></td>
-                        <td><input type="radio" id="estado_direccion_no_aplica" value="no_aplica" name="estado_direccion"></td>
+                        <td><input type="radio" id="estado_direccion_bueno" value="bueno" name="estado_direccion" required></td>
+                        <td><input type="radio" id="estado_direccion_malo" value="malo" name="estado_direccion" required></td>
+                        <td><input type="radio" id="estado_direccion_no_aplica" value="no_aplica" name="estado_direccion" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Suspension Delantera.-->
                         <td><label>Suspensión Delantera <br>(Amortiguadores, Muelles, Hojas, Grapas)</label></td>
-                        <td><input type="radio" id="estado_susp_delant_bueno" value="bueno" name="estado_susp_delant"></td>
-                        <td><input type="radio" id="estado_susp_delant_malo" value="malo" name="estado_susp_delant"></td>
-                        <td><input type="radio" id="estado_susp_delant_no_aplica" value="no_aplica" name="estado_susp_delant"></td>
+                        <td><input type="radio" id="estado_susp_delant_bueno" value="bueno" name="estado_susp_delant" required></td>
+                        <td><input type="radio" id="estado_susp_delant_malo" value="malo" name="estado_susp_delant" required></td>
+                        <td><input type="radio" id="estado_susp_delant_no_aplica" value="no_aplica" name="estado_susp_delant" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Suspension Trasera.-->
                         <td><label>Suspensión Trasera <br>(Amortiguadores, Muelles, Hojas, Grapas)</label></td>
-                        <td><input type="radio" id="estado_susp_trasera_bueno" value="bueno" name="estado_susp_trasera"></td>
-                        <td><input type="radio" id="estado_susp_trasera_malo" value="malo" name="estado_susp_trasera"></td>
-                        <td><input type="radio" id="estado_susp_trasera_no_aplica" value="no_aplica" name="estado_susp_trasera"></td>
+                        <td><input type="radio" id="estado_susp_trasera_bueno" value="bueno" name="estado_susp_trasera" required></td>
+                        <td><input type="radio" id="estado_susp_trasera_malo" value="malo" name="estado_susp_trasera" required></td>
+                        <td><input type="radio" id="estado_susp_trasera_no_aplica" value="no_aplica" name="estado_susp_trasera" required></td>
                     </tr>
                     <tr>
                         <!--Fila Parabrisas-->
                         <td><label>Parabrisas(Vidrio Frontal, Trasero)</label></td>
-                        <td><input type="radio" id="estado_parabrisas_bueno" value="bueno" name="estado_parabrisas"></td>
-                        <td><input type="radio" id="estado_parabrisas_malo" value="malo" name="estado_parabrisas"></td>
-                        <td><input type="radio" id="estado_parabrisas_no_aplica" value="no_aplica" name="estado_parabrisas"></td>
+                        <td><input type="radio" id="estado_parabrisas_bueno" value="bueno" name="estado_parabrisas" required></td>
+                        <td><input type="radio" id="estado_parabrisas_malo" value="malo" name="estado_parabrisas" required></td>
+                        <td><input type="radio" id="estado_parabrisas_no_aplica" value="no_aplica" name="estado_parabrisas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Limpiabrisas-->
                         <td><label>Sistema Limpiabrisas (Izquierdo, Derecho)</label></td>
-                        <td><input type="radio" id="estado_limpiaparabrisas_bueno" value="bueno" name="estado_parabrisas"></td>
-                        <td><input type="radio" id="estado_limpiaparabrisas_malo" value="malo" name="estado_parabrisas"></td>
-                        <td><input type="radio" id="estado_limpiaparabrisas_no_aplica" value="no_aplica" name="estado_parabrisas"></td>
+                        <td><input type="radio" id="estado_limpiaparabrisas_bueno" value="bueno" name="estado_parabrisas" required></td>
+                        <td><input type="radio" id="estado_limpiaparabrisas_malo" value="malo" name="estado_parabrisas" required></td>
+                        <td><input type="radio" id="estado_limpiaparabrisas_no_aplica" value="no_aplica" name="estado_parabrisas" required></td>
                     </tr>
                 </table>
                 <br>
@@ -720,65 +720,65 @@
                     <tr>
                         <!--Titulo Luces Bajas.-->
                         <td><label>Bajas</label></td>
-                        <td><input type="radio" id="estado_luc_bajas_bueno" value="bueno" name="estado_luc_bajas"></td>
-                        <td><input type="radio" id="estado_luc_bajas_malo" value="malo" name="estado_luc_bajas"></td>
-                        <td><input type="radio" id="estado_luc_bajas_no_aplica" value="no_aplica" name="estado_luc_bajas"></td>
+                        <td><input type="radio" id="estado_luc_bajas_bueno" value="bueno" name="estado_luc_bajas" required></td>
+                        <td><input type="radio" id="estado_luc_bajas_malo" value="malo" name="estado_luc_bajas" required></td>
+                        <td><input type="radio" id="estado_luc_bajas_no_aplica" value="no_aplica" name="estado_luc_bajas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Luces Medias.-->
                         <td><label>Medias</label></td>
-                        <td><input type="radio" id="estado_luc_medias_bueno" value="bueno" name="estado_luc_medias"></td>
-                        <td><input type="radio" id="estado_luc_medias_malo" value="malo" name="estado_luc_medias"></td>
-                        <td><input type="radio" id="estado_luc_medias_no_aplica" value="no_aplica" name="estado_luc_medias"></td>
+                        <td><input type="radio" id="estado_luc_medias_bueno" value="bueno" name="estado_luc_medias" required></td>
+                        <td><input type="radio" id="estado_luc_medias_malo" value="malo" name="estado_luc_medias" required></td>
+                        <td><input type="radio" id="estado_luc_medias_no_aplica" value="no_aplica" name="estado_luc_medias" required></td>
                     </tr>
                     <tr>
                         <!--Fila Luces Altas.-->
                         <td><label>Altas</label></td>
-                        <td><input type="radio" id="estado_luc_altas_bueno" value="bueno" name="estado_luc_altas"></td>
-                        <td><input type="radio" id="estado_luc_altas_malo" value="malo" name="estado_luc_altas"></td>
-                        <td><input type="radio" id="estado_luc_altas_no_aplica" value="no_aplica" name="estado_luc_altas"></td>
+                        <td><input type="radio" id="estado_luc_altas_bueno" value="bueno" name="estado_luc_altas" required></td>
+                        <td><input type="radio" id="estado_luc_altas_malo" value="malo" name="estado_luc_altas" required></td>
+                        <td><input type="radio" id="estado_luc_altas_no_aplica" value="no_aplica" name="estado_luc_altas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Direcciónal Delantera Derecha.-->
                         <td><label>Direccional Delantera Derecha</label></td>
-                        <td><input type="radio" id="estado_direccional_del_der_bueno" value="bueno" name="estado_direccional_del_der"></td>
-                        <td><input type="radio" id="estado_direccional_del_der_malo" value="malo" name="estado_direccional_del_der"></td>
-                        <td><input type="radio" id="estado_direccional_del_der_no_aplica" value="no_aplica" name="estado_direccional_del_der"></td>
+                        <td><input type="radio" id="estado_direccional_del_der_bueno" value="bueno" name="estado_direccional_del_der" required></td>
+                        <td><input type="radio" id="estado_direccional_del_der_malo" value="malo" name="estado_direccional_del_der" required></td>
+                        <td><input type="radio" id="estado_direccional_del_der_no_aplica" value="no_aplica" name="estado_direccional_del_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Direcciónal Delantera Izquierda.-->
                         <td><label>Direccional Delantera Izquierda</label></td>
-                        <td><input type="radio" id="estado_direccional_del_izq_bueno" value="bueno" name="estado_direccional_del_izq"></td>
-                        <td><input type="radio" id="estado_direccional_del_izq_malo" value="malo" name="estado_direccional_del_izq"></td>
-                        <td><input type="radio" id="estado_direccional_del_izq_no_aplica" value="no_aplica" name="estado_direccional_del_izq"></td>
+                        <td><input type="radio" id="estado_direccional_del_izq_bueno" value="bueno" name="estado_direccional_del_izq" required></td>
+                        <td><input type="radio" id="estado_direccional_del_izq_malo" value="malo" name="estado_direccional_del_izq" required></td>
+                        <td><input type="radio" id="estado_direccional_del_izq_no_aplica" value="no_aplica" name="estado_direccional_del_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila Direccional Trasera Derecha.-->
                         <td><label>Direccional Trasera Derecha.</label></td>
-                        <td><input type="radio" id="estado_direccional_tras_der_bueno" value="bueno" name="estado_direccional_tras_der"></td>
-                        <td><input type="radio" id="estado_direccional_tras_der_malo" value="malo" name="estado_direccional_tras_der"></td>
-                        <td><input type="radio" id="estado_direccional_tras_der_no_aplica" value="no_aplica" name="estado_direccional_tras_der"></td>
+                        <td><input type="radio" id="estado_direccional_tras_der_bueno" value="bueno" name="estado_direccional_tras_der" required></td>
+                        <td><input type="radio" id="estado_direccional_tras_der_malo" value="malo" name="estado_direccional_tras_der" required></td>
+                        <td><input type="radio" id="estado_direccional_tras_der_no_aplica" value="no_aplica" name="estado_direccional_tras_der" required></td>
                     </tr>
                     <tr>
                         <!--Fila Direccional Trasera Izquierda.-->
                         <td><label>Direccional Trasera Izquierda.</label></td>
-                        <td><input type="radio" id="estado_direccional_tras_izq_bueno" value="bueno" name="estado_direccional_tras_izq"></td>
-                        <td><input type="radio" id="estado_direccional_tras_izq_malo" value="malo" name="estado_direccional_tras_izq"></td>
-                        <td><input type="radio" id="estado_direccional_tras_izq_no_aplica" value="no_aplica" name="estado_direccional_tras_izq"></td>
+                        <td><input type="radio" id="estado_direccional_tras_izq_bueno" value="bueno" name="estado_direccional_tras_izq" required></td>
+                        <td><input type="radio" id="estado_direccional_tras_izq_malo" value="malo" name="estado_direccional_tras_izq" required></td>
+                        <td><input type="radio" id="estado_direccional_tras_izq_no_aplica" value="no_aplica" name="estado_direccional_tras_izq" required></td>
                     </tr>
                     <tr>
                         <!--Fila Luces de Parqueo.-->
                         <td><label>Parqueo</label></td>
-                        <td><input type="radio" id="estado_parqueo_bueno" value="bueno" name="estado_parqueo"></td>
-                        <td><input type="radio" id="estado_parqueo_malo" value="malo" name="estado_parqueo"></td>
-                        <td><input type="radio" id="estado_parqueo_no-aplica" value="no_aplica" name="estado_parqueo"></td>
+                        <td><input type="radio" id="estado_parqueo_bueno" value="bueno" name="estado_parqueo" required></td>
+                        <td><input type="radio" id="estado_parqueo_malo" value="malo" name="estado_parqueo" required></td>
+                        <td><input type="radio" id="estado_parqueo_no-aplica" value="no_aplica" name="estado_parqueo" required></td>
                     </tr>
                     <tr>
                         <!--Fila Luces de Reversa.-->
                         <td><label>Reversa</label></td>
-                        <td><input type="radio" id="estado_reversa_bueno" value="bueno" name="estado_reversa"></td>
-                        <td><input type="radio" id="estado_reversa_malo" value="malo" name="estado_reversa"></td>
-                        <td><input type="radio" id="estado_reversa_no-aplica" value="no_aplica" name="estado_reversa"></td>
+                        <td><input type="radio" id="estado_reversa_bueno" value="bueno" name="estado_reversa" required></td>
+                        <td><input type="radio" id="estado_reversa_malo" value="malo" name="estado_reversa" required></td>
+                        <td><input type="radio" id="estado_reversa_no-aplica" value="no_aplica" name="estado_reversa" required></td>
                     </tr>
                 </table>
                 <br>
@@ -794,16 +794,16 @@
                     <tr>
                         <!--Fila de Bocina Delantera.-->
                         <td><label>Bocina Delantera</label></td>
-                        <td><input type="radio" id="estado_bocina_del_bueno" value="bueno" name="estado_bocina_del"></td>
-                        <td><input type="radio" id="estado_bocina_del_malo" value="malo" name="estado_bocina_del"></td>
-                        <td><input type="radio" id="estado_bocina_del_no_aplica" value="no_aplica" name="estado_bocina_del"></td>
+                        <td><input type="radio" id="estado_bocina_del_bueno" value="bueno" name="estado_bocina_del" required></td>
+                        <td><input type="radio" id="estado_bocina_del_malo" value="malo" name="estado_bocina_del" required></td>
+                        <td><input type="radio" id="estado_bocina_del_no_aplica" value="no_aplica" name="estado_bocina_del" required></td>
                     </tr>
                     <tr>
                         <!--Fila de Alarma de Reversa.-->
                         <td><label>Alarma de Reversa</label></td>
-                        <td><input type="radio" id="estado_alarma_rev_bueno" value="bueno" name="estado_alarma_rev"></td>
-                        <td><input type="radio" id="estado_alarma_rev_malo" value="malo" name="estado_alarma_rev"></td>
-                        <td><input type="radio" id="estado_alarma_rev_no_aplica" value="no_aplica" name="estado_alarma_rev"></td>
+                        <td><input type="radio" id="estado_alarma_rev_bueno" value="bueno" name="estado_alarma_rev" required></td>
+                        <td><input type="radio" id="estado_alarma_rev_malo" value="malo" name="estado_alarma_rev" required></td>
+                        <td><input type="radio" id="estado_alarma_rev_no_aplica" value="no_aplica" name="estado_alarma_rev" required></td>
                     </tr>
                 </table>
                 <br>
@@ -819,58 +819,58 @@
                     <tr>
                         <!--Fila Chasis y Carroceria.-->
                         <td><label>Bastidores</label></td>
-                        <td><input type="radio" id="estado_bastidores_bueno" value="bueno" name="estado_bastidores"></td>
-                        <td><input type="radio" id="estado_bastidores_malo" value="malo" name="estado_bastidores"></td>
-                        <td><input type="radio" id="estado_bastidores_no_aplica" value="no_aplica" name="estado_bastidores"></td>
+                        <td><input type="radio" id="estado_bastidores_bueno" value="bueno" name="estado_bastidores" required></td>
+                        <td><input type="radio" id="estado_bastidores_malo" value="malo" name="estado_bastidores" required></td>
+                        <td><input type="radio" id="estado_bastidores_no_aplica" value="no_aplica" name="estado_bastidores" required></td>
                     </tr>
                     <tr>
                         <!--Fila Carroceria.-->
                         <td><label>Carroceria</label></td>
-                        <td><input type="radio" id="estado_carroceria_bueno" value="bueno" name="estado_carroceria"></td>
-                        <td><input type="radio" id="estado_carroceria_malo" value="malo" name="estado_carroceria"></td>
-                        <td><input type="radio" id="estado_carroceria_no_aplica" value="no_aplica" name="estado_carroceria"></td>
+                        <td><input type="radio" id="estado_carroceria_bueno" value="bueno" name="estado_carroceria" required></td>
+                        <td><input type="radio" id="estado_carroceria_malo" value="malo" name="estado_carroceria" required></td>
+                        <td><input type="radio" id="estado_carroceria_no_aplica" value="no_aplica" name="estado_carroceria" required></td>
                     </tr>
                     <tr>
                         <!--Fila Largueros y Travesaños.-->
                         <td><label>Largueros y Travesaños</label></td>
-                        <td><input type="radio" id="estado_largytrav_bueno" value="bueno" name="estado_largytrav"></td>
-                        <td><input type="radio" id="estado_largytrav_malo" value="malo" name="estado_largytrav"></td>
-                        <td><input type="radio" id="estado_largytrav_no_aplica" value="no_aplica" name="estado_largytrav"></td>
+                        <td><input type="radio" id="estado_largytrav_bueno" value="bueno" name="estado_largytrav" required></td>
+                        <td><input type="radio" id="estado_largytrav_malo" value="malo" name="estado_largytrav" required></td>
+                        <td><input type="radio" id="estado_largytrav_no_aplica" value="no_aplica" name="estado_largytrav" required></td>
                     </tr>
                     <tr>
                         <!--Fila Compuertas.-->
                         <td><label>Compuertas</label></td>
-                        <td><input type="radio" id="estado_compuertas_bueno" value="bueno" name="estado_compuertas"></td>
-                        <td><input type="radio" id="estado_compuertas_malo" value="malo" name="estado_compuertas"></td>
-                        <td><input type="radio" id="estado_compuertas_no_aplica" value="no_aplica" name="estado_compuertas"></td>
+                        <td><input type="radio" id="estado_compuertas_bueno" value="bueno" name="estado_compuertas" required></td>
+                        <td><input type="radio" id="estado_compuertas_malo" value="malo" name="estado_compuertas" required></td>
+                        <td><input type="radio" id="estado_compuertas_no_aplica" value="no_aplica" name="estado_compuertas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Cierres y Sujetadores.-->
                         <td><label>Cierres y Sujetadores</label></td>
-                        <td><input type="radio" id="estado_cierresysuj_bueno" value="bueno" name="estado_cierresysuj"></td>
-                        <td><input type="radio" id="estado_cierresysuj_malo" value="malo" name="estado_cierresysuj"></td>
-                        <td><input type="radio" id="estado_cierresysuj_no_aplica" value="no_aplica" name="estado_cierresysuj"></td>
+                        <td><input type="radio" id="estado_cierresysuj_bueno" value="bueno" name="estado_cierresysuj" required></td>
+                        <td><input type="radio" id="estado_cierresysuj_malo" value="malo" name="estado_cierresysuj" required></td>
+                        <td><input type="radio" id="estado_cierresysuj_no_aplica" value="no_aplica" name="estado_cierresysuj" required></td>
                     </tr>
                     <tr>
                         <!--Fila Barandas o Rieles Laterales.-->
                         <td><label>Barandas o Rieles Laterales</label></td>
-                        <td><input type="radio" id="estado_barandas_bueno" value="bueno" name="estado_barandas"></td>
-                        <td><input type="radio" id="estado_barandas_malo" value="malo" name="estado_barandas"></td>
-                        <td><input type="radio" id="estado_barandas_no_aplica" value="no_aplica" name="estado_barandas"></td>
+                        <td><input type="radio" id="estado_barandas_bueno" value="bueno" name="estado_barandas" required></td>
+                        <td><input type="radio" id="estado_barandas_malo" value="malo" name="estado_barandas" required></td>
+                        <td><input type="radio" id="estado_barandas_no_aplica" value="no_aplica" name="estado_barandas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Varillas.-->
                         <td><label>Varillas</label></td>
-                        <td><input type="radio" id="estado_varillas_bueno" value="bueno" name="estado_varillas"></td>
-                        <td><input type="radio" id="estado_varillas_malo" value="malo" name="estado_varillas"></td>
-                        <td><input type="radio" id="estado_varillas_no_aplica" value="no_aplica" name="estado_varillas"></td>
+                        <td><input type="radio" id="estado_varillas_bueno" value="bueno" name="estado_varillas" required></td>
+                        <td><input type="radio" id="estado_varillas_malo" value="malo" name="estado_varillas" required></td>
+                        <td><input type="radio" id="estado_varillas_no_aplica" value="no_aplica" name="estado_varillas" required></td>
                     </tr>
                     <tr>
                         <!--Fila Carpa y Correas.-->
                         <td><label>Carpa y Correas</label></td>
-                        <td><input type="radio" id="estado_carpycorr_bueno" value="bueno" name="estado_carpycorr"></td>
-                        <td><input type="radio" id="estado_carpycorr_malo" value="malo" name="estado_carpycorr"></td>
-                        <td><input type="radio" id="estado_carpycorr_no_aplica" value="no_aplica" name="estado_carpycorr"></td>
+                        <td><input type="radio" id="estado_carpycorr_bueno" value="bueno" name="estado_carpycorr" required></td>
+                        <td><input type="radio" id="estado_carpycorr_malo" value="malo" name="estado_carpycorr" required></td>
+                        <td><input type="radio" id="estado_carpycorr_no_aplica" value="no_aplica" name="estado_carpycorr" required></td>
                     </tr>
                 </table>
                 <br>
@@ -886,72 +886,72 @@
                     <tr>
                         <!--Fila de Gato con Capacidad para Elevar el Vehiculo.-->
                         <td><label>Gato con Capacidad para Elevar el Vehiculo</label></td>
-                        <td><input type="radio" id="estado_gato_bueno" value="bueno" name="estado_gato"></td>
-                        <td><input type="radio" id="estado_gato_malo" value="malo" name="estado_gato"></td>
-                        <td><input type="radio" id="estado_gato_no_aplica" value="no_aplica" name="estado_gato"></td>
+                        <td><input type="radio" id="estado_gato_bueno" value="bueno" name="estado_gato" required></td>
+                        <td><input type="radio" id="estado_gato_malo" value="malo" name="estado_gato" required></td>
+                        <td><input type="radio" id="estado_gato_no_aplica" value="no_aplica" name="estado_gato" required></td>
                     </tr>
                     <tr>
                         <!--Fila Tacos para Bloquear el Vehiculo.-->
                         <td><label>Tacos para Bloquear el Vehiculo</label></td>
-                        <td><input type="radio" id="estado_tacos_bueno" value="bueno" name="estado_tacos"></td>
-                        <td><input type="radio" id="estado_tacos_malo" value="malo" name="estado_tacos"></td>
-                        <td><input type="radio" id="estado_tacos_no_aplica" value="no_aplica" name="estado_tacos"></td>
+                        <td><input type="radio" id="estado_tacos_bueno" value="bueno" name="estado_tacos" required></td>
+                        <td><input type="radio" id="estado_tacos_malo" value="malo" name="estado_tacos" required></td>
+                        <td><input type="radio" id="estado_tacos_no_aplica" value="no_aplica" name="estado_tacos" required></td>
                     </tr>
                     <tr>
                         <!--Fila Señales de Carretera Triangulares.-->
                         <td><label>Señales de Carretera Triangulares</label></td>
-                        <td><input type="radio" id="estado_señales_triang_bueno" value="bueno" name="estado_señales_triang"></td>
-                        <td><input type="radio" id="estado_señales_triang_malo" value="malo" name="estado_señales_triang"></td>
-                        <td><input type="radio" id="estado_señales_triang_no_aplica" value="no_aplica" name="estado_señales_triang"></td>
+                        <td><input type="radio" id="estado_señales_triang_bueno" value="bueno" name="estado_señales_triang" required></td>
+                        <td><input type="radio" id="estado_señales_triang_malo" value="malo" name="estado_señales_triang" required></td>
+                        <td><input type="radio" id="estado_señales_triang_no_aplica" value="no_aplica" name="estado_señales_triang" required></td>
                     </tr>
                     <tr>
                         <!--Fila Par de Guantes Anticorte.-->
                         <td><label>Par de Guantes Anticorte</label></td>
-                        <td><input type="radio" id="estado_guantes_anticorte_bueno" value="bueno" name="estado_guantes_anticorte"></td>
-                        <td><input type="radio" id="estado_guantes_anticorte_malo" value="malo" name="estado_guantes_anticorte"></td>
-                        <td><input type="radio" id="estado_guantes_anticorte_no_aplica" value="no_aplica" name="estado_guantes_anticorte"></td>
+                        <td><input type="radio" id="estado_guantes_anticorte_bueno" value="bueno" name="estado_guantes_anticorte" required></td>
+                        <td><input type="radio" id="estado_guantes_anticorte_malo" value="malo" name="estado_guantes_anticorte" required></td>
+                        <td><input type="radio" id="estado_guantes_anticorte_no_aplica" value="no_aplica" name="estado_guantes_anticorte" required></td>
                     </tr>
                     <tr>
                         <!--Fila Copa con su Palanca para las Tuercas de las Llantas Delanteras y Traseras.-->
                         <td><label>Copa con su Palanca para las Tuercas<br>de las Llantas Delanteras y Traseras</label></td>
-                        <td><input type="radio" id="estado_copa_bueno" value="bueno" name="estado_copa"></td>
-                        <td><input type="radio" id="estado_copa_malo" value="malo" name="estado_copa"></td>
-                        <td><input type="radio" id="estado_copa_no_aplica" value="no_aplica" name="estado_copa"></td>
+                        <td><input type="radio" id="estado_copa_bueno" value="bueno" name="estado_copa" required></td>
+                        <td><input type="radio" id="estado_copa_malo" value="malo" name="estado_copa" required></td>
+                        <td><input type="radio" id="estado_copa_no_aplica" value="no_aplica" name="estado_copa" required></td>
                     </tr>
                     <tr>
                         <!--Fila Extintor de 10 Libras.-->
                         <td><label>Extintor de 10 Libras</label></td>
-                        <td><input type="radio" id="estado_extintor_bueno" value="bueno" name="estado_extintor"></td>
-                        <td><input type="radio" id="estado_extintor_malo" value="malo" name="estado_extintor"></td>
-                        <td><input type="radio" id="estado_extintor_aplica" value="no_aplica" name="estado_extintor"></td>
+                        <td><input type="radio" id="estado_extintor_bueno" value="bueno" name="estado_extintor" required></td>
+                        <td><input type="radio" id="estado_extintor_malo" value="malo" name="estado_extintor" required></td>
+                        <td><input type="radio" id="estado_extintor_aplica" value="no_aplica" name="estado_extintor" required></td>
                     </tr>
                     <tr>
                         <!--Fila Conos Plasticos Reflectivos de 50CM.-->
                         <td><label>Conos Plasticos Reflectivos de 50CM</label></td>
-                        <td><input type="radio" id="estado_conos_bueno" value="bueno" name="estado_conos"></td>
-                        <td><input type="radio" id="estado_conos_malo" value="malo" name="estado_conos"></td>
-                        <td><input type="radio" id="estado_conos_no_aplica" value="no_aplica" name="estado_conos"></td>
+                        <td><input type="radio" id="estado_conos_bueno" value="bueno" name="estado_conos" required></td>
+                        <td><input type="radio" id="estado_conos_malo" value="malo" name="estado_conos" required></td>
+                        <td><input type="radio" id="estado_conos_no_aplica" value="no_aplica" name="estado_conos" required></td>
                     </tr>
                     <tr>
                         <!--Fila Linterna Autorecargable, con Adaptador al Encendedor de Cigarrillos.-->
                         <td><label>Linterna Autorecargable, con Adaptador al<br>Encendedor de Cigarrillos</label></td>
-                        <td><input type="radio" id="estado_linterna_bueno" value="bueno" name="estado_linterna"></td>
-                        <td><input type="radio" id="estado_linterna_malo" value="malo" name="estado_linterna"></td>
-                        <td><input type="radio" id="estado_linterna_no_aplica" value="no_aplica" name="estado_linterna"></td>
+                        <td><input type="radio" id="estado_linterna_bueno" value="bueno" name="estado_linterna" required></td>
+                        <td><input type="radio" id="estado_linterna_malo" value="malo" name="estado_linterna" required></td>
+                        <td><input type="radio" id="estado_linterna_no_aplica" value="no_aplica" name="estado_linterna" required></td>
                     </tr>
                     <tr>
                         <!--Fila Caja de Herramientas ( Alicates, Destornilladores de Pala, Estrella, Llave de Expansión, Llaves Mixtas Varias)-->
                         <td><label>Caja de Herramientas ( Alicates, Destornilladores de Pala,<br>Estrella, Llave de Expansión, Llaves Mixtas Varias)</label></td>
-                        <td><input type="radio" id="estado_caja_herr_bueno" value="bueno" name="estado_caja_herr"></td>
-                        <td><input type="radio" id="estado_caja_herr_malo" value="malo" name="estado_caja_herr"></td>
-                        <td><input type="radio" id="estado_caja_herr_no_aplica" value="no_aplica" name="estado_caja_herr"></td>
+                        <td><input type="radio" id="estado_caja_herr_bueno" value="bueno" name="estado_caja_herr" required></td>
+                        <td><input type="radio" id="estado_caja_herr_malo" value="malo" name="estado_caja_herr" required></td>
+                        <td><input type="radio" id="estado_caja_herr_no_aplica" value="no_aplica" name="estado_caja_herr" required></td>
                     </tr>
                     <tr>
                         <!--Fila Kit Antiderrames)-->
                         <td><label>Kit Antiderrames</label></td>
-                        <td><input type="radio" id="estado_kit_antid_bueno" value="bueno" name="estado_kit_antid"></td>
-                        <td><input type="radio" id="estado_kit_antid_malo" value="malo" name="estado_kit_antid"></td>
-                        <td><input type="radio" id="estado_kit_antid_no_aplica" value="no_aplica" name="estado_kit_antid"></td>
+                        <td><input type="radio" id="estado_kit_antid_bueno" value="bueno" name="estado_kit_antid" required></td>
+                        <td><input type="radio" id="estado_kit_antid_malo" value="malo" name="estado_kit_antid" required></td>
+                        <td><input type="radio" id="estado_kit_antid_no_aplica" value="no_aplica" name="estado_kit_antid" required></td>
                     </tr>
                 </table>
                 <br>
@@ -967,65 +967,65 @@
                     <tr>
                         <!--Fila Instalación Electrica (Arnes).-->
                         <td><label>Instalación Electrica (Arnes)</label></td>
-                        <td><input type="radio" id="estado_arnes_bueno" value="bueno" name="estado_arnes"></td>
-                        <td><input type="radio" id="estado_arnes_malo" value="malo" name="estado_arnes"></td>
-                        <td><input type="radio" id="estado_arnes_no_aplica" value="no_aplica" name="estado_arnes"></td>
+                        <td><input type="radio" id="estado_arnes_bueno" value="bueno" name="estado_arnes" required></td>
+                        <td><input type="radio" id="estado_arnes_malo" value="malo" name="estado_arnes" required></td>
+                        <td><input type="radio" id="estado_arnes_no_aplica" value="no_aplica" name="estado_arnes" required></td>
                     </tr>
                     <tr>
                         <!--Fila Embrague (Clutch).-->
                         <td><label>Embrague (Clutch)</label></td>
-                        <td><input type="radio" id="estado_embrague_bueno" value="bueno" name="estado_embrague"></td>
-                        <td><input type="radio" id="estado_embrague_malo" value="malo" name="estado_embrague"></td>
-                        <td><input type="radio" id="estado_embrague_no_aplica" value="no_aplica" name="estado_embrague"></td>
+                        <td><input type="radio" id="estado_embrague_bueno" value="bueno" name="estado_embrague" required></td>
+                        <td><input type="radio" id="estado_embrague_malo" value="malo" name="estado_embrague" required></td>
+                        <td><input type="radio" id="estado_embrague_no_aplica" value="no_aplica" name="estado_embrague" required></td>
                     </tr>
                     <tr>
                         <!--Fila Escape (Exosto).-->
                         <td><label>Escape (Exosto)</label></td>
-                        <td><input type="radio" id="estado_escape_bueno" value="bueno" name="estado_escape"></td>
-                        <td><input type="radio" id="estado_escape_malo" value="malo" name="estado_escape"></td>
-                        <td><input type="radio" id="estado_escape_no_aplica" value="no_aplica" name="estado_escape"></td>
+                        <td><input type="radio" id="estado_escape_bueno" value="bueno" name="estado_escape" required></td>
+                        <td><input type="radio" id="estado_escape_malo" value="malo" name="estado_escape" required></td>
+                        <td><input type="radio" id="estado_escape_no_aplica" value="no_aplica" name="estado_escape" required></td>
                     </tr>
                     <tr>
                         <!--Fila Salto de Cambios.-->
                         <td><label>Salto de Cambios</label></td>
-                        <td><input type="radio" id="estado_salto_cambios_bueno" value="bueno" name="estado_salto_cambios"></td>
-                        <td><input type="radio" id="estado_salto_cambios_malo" value="malo" name="estado_salto_cambios"></td>
-                        <td><input type="radio" id="estado_salto_cambios_no_aplica" value="no_aplica" name="estado_salto_cambios"></td>
+                        <td><input type="radio" id="estado_salto_cambios_bueno" value="bueno" name="estado_salto_cambios" required></td>
+                        <td><input type="radio" id="estado_salto_cambios_malo" value="malo" name="estado_salto_cambios" required></td>
+                        <td><input type="radio" id="estado_salto_cambios_no_aplica" value="no_aplica" name="estado_salto_cambios" required></td>
                     </tr>
                     <tr>
                         <!--Fila Cambios Suaves.-->
                         <td><label>Cambios Suaves</label></td>
-                        <td><input type="radio" id="estado_cambios_suaves_bueno" value="bueno" name="estado_cambios_suaves"></td>
-                        <td><input type="radio" id="estado_cambios_suaves_malo" value="malo" name="estado_cambios_suaves"></td>
-                        <td><input type="radio" id="estado_cambios_suaves_no_aplica" value="no_aplica" name="estado_cambios_suaves"></td>
+                        <td><input type="radio" id="estado_cambios_suaves_bueno" value="bueno" name="estado_cambios_suaves" required></td>
+                        <td><input type="radio" id="estado_cambios_suaves_malo" value="malo" name="estado_cambios_suaves" required></td>
+                        <td><input type="radio" id="estado_cambios_suaves_no_aplica" value="no_aplica" name="estado_cambios_suaves" required></td>
                     </tr>
                     <tr>
                         <!--Fila Guaya de Acelerador.-->
                         <td><label>Guaya de Acelerador</label></td>
-                        <td><input type="radio" id="estado_guaya_acel_bueno" value="bueno" name="estado_guaya_acel"></td>
-                        <td><input type="radio" id="estado_guaya_acel_malo" value="malo" name="estado_guaya_acel"></td>
-                        <td><input type="radio" id="estado_guaya_acel_no_aplica" value="no_aplica" name="estado_guaya_acel"></td>
+                        <td><input type="radio" id="estado_guaya_acel_bueno" value="bueno" name="estado_guaya_acel" required></td>
+                        <td><input type="radio" id="estado_guaya_acel_malo" value="malo" name="estado_guaya_acel" required></td>
+                        <td><input type="radio" id="estado_guaya_acel_no_aplica" value="no_aplica" name="estado_guaya_acel" required></td>
                     </tr>
                     <tr>
                         <!--Fila Encendido.-->
                         <td><label>Encendido</label></td>
-                        <td><input type="radio" id="estado_encendido_bueno" value="bueno" name="estado_encendido"></td>
-                        <td><input type="radio" id="estado_encendido_malo" value="malo" name="estado_encendido"></td>
-                        <td><input type="radio" id="estado_encendido_no_aplica" value="no_aplica" name="estado_encendido"></td>
+                        <td><input type="radio" id="estado_encendido_bueno" value="bueno" name="estado_encendido"required></td>
+                        <td><input type="radio" id="estado_encendido_malo" value="malo" name="estado_encendido" required></td>
+                        <td><input type="radio" id="estado_encendido_no_aplica" value="no_aplica" name="estado_encendido" required></td>
                     </tr>
                     <tr>
                         <!--Fila Sincronización.-->
                         <td><label>Sincronización</label></td>
-                        <td><input type="radio" id="estado_sincronizacion_bueno" value="bueno" name="estado_sincronizacion"></td>
-                        <td><input type="radio" id="estado_sincronizacion_malo" value="malo" name="estado_sincronizacion"></td>
-                        <td><input type="radio" id="estado_sincronizacion_no_aplica" value="no_aplica" name="estado_sincronizacion"></td>
+                        <td><input type="radio" id="estado_sincronizacion_bueno" value="bueno" name="estado_sincronizacion" required></td>
+                        <td><input type="radio" id="estado_sincronizacion_malo" value="malo" name="estado_sincronizacion" required></td>
+                        <td><input type="radio" id="estado_sincronizacion_no_aplica" value="no_aplica" name="estado_sincronizacion" required></td>
                     </tr>
                     <tr>
                         <!--Fila Placas.-->
                         <td><label>Placas</label></td>
-                        <td><input type="radio" id="estado_placas_bueno" value="bueno" name="estado_placas"></td>
-                        <td><input type="radio" id="estado_placas_malo" value="malo" name="estado_placas"></td>
-                        <td><input type="radio" id="estado_placas_no_aplica" value="no_aplica" name="estado_placas"></td>
+                        <td><input type="radio" id="estado_placas_bueno" value="bueno" name="estado_placas" required></td>
+                        <td><input type="radio" id="estado_placas_malo" value="malo" name="estado_placas" required></td>
+                        <td><input type="radio" id="estado_placas_no_aplica" value="no_aplica" name="estado_placas" required></td>
                     </tr>
                 </table>
                 <button type="submit">Enviar formulario</button>
