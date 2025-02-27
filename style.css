@@ -28,8 +28,7 @@ form{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-  }
-  
+}
 .form-column {
     width: 48%; /* Puedes ajustar este porcentaje según el espacio que necesites */
 }
